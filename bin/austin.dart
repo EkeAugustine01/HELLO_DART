@@ -37,4 +37,5 @@ void main() {
     print(ittem);
   });
   print('itemss: $itemss');
+  print('ittem is equal to: $itemss');
 }
