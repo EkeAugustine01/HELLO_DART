@@ -1,4 +1,14 @@
 //Todo comment
+class Employee {
+  String name;
+  String post;
+
+  Employee(this.name, this.post);
+
+  @override
+  String toString() => '$name($post)';
+}
+
 void main() {
   var items = [];
   items.add(10);
@@ -38,4 +48,25 @@ void main() {
   });
   print('itemss: $itemss');
   print('ittem is equal to: $itemss');
+
+  var List01 = ['dell', 'LG', 'panasonic'];
+
+  var List02 = ['btc', 'eth', 'sol'];
+  List02.retainWhere((List) {
+    return List.contains('t');
+  });
+  print(List02);
+
+  var employeeList = [
+    Employee('Sam', 'Gateman'),
+    Employee('Austin', 'CEO'),
+    Employee('Gozie', 'Asst Manager'),
+    Employee('Ebuka', 'Board member')
+  ];
+
+  var managerList = employeeList.where((employee) {
+    if (employee.post == 'CEO') return true;
+    return false;
+  });
+  print(managerList);
 }
