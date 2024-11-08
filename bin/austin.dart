@@ -76,4 +76,33 @@ void main() {
   } else {
     print('Thank God for life');
   }
+
+  int year = 2021;
+
+  switch (year) {
+    case 2020:
+      print("corona Virus");
+      break;
+
+    case 2021:
+      print('Asuu strike');
+      break;
+
+    case 2022:
+      print('No gree for anybody');
+      break;
+
+    case 2023:
+      print('This year na my year');
+      break;
+
+    default:
+      print('Nothing for you');
+  }
+  int q, r;
+  for (q = 1; q <= 2; q++) {
+    for (r = 1; r <= 4; r++) {
+      print('int q=$q int r=$r');
+    }
+  }
 }
