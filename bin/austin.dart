@@ -69,4 +69,11 @@ void main() {
     return false;
   });
   print(managerList);
+
+  int g = 5;
+  if (g > 4) {
+    print('God is the Greatest');
+  } else {
+    print('Thank God for life');
+  }
 }
